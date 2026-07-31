@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EcommerceSystem.Domain.Enums
+﻿namespace EcommerceSystem.Domain.Enums
 {
-    internal class OrderStatus
+    public enum OrderStatus
     {
+        Pending = 1, Paid = 2
     }
 }

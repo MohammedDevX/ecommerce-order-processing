@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EcommerceSystem.Domain.Entities
+﻿namespace EcommerceSystem.Domain.Entities
 {
-    internal class Customer
+    public class Customer
     {
+        public Guid Id { get; init; }
+        public required string FullName { get; init; }
+        public required string Email { get; init; }
     }
 }
