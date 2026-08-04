@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 
 namespace EcommerceSystem.Domain.Entities
 {
@@ -9,6 +10,7 @@ namespace EcommerceSystem.Domain.Entities
         public decimal Price { get; private set; }
         public bool IsActive { get; private set; } = true;
 
+        [SetsRequiredMembers] // This attribute means that the constructor initialise the properties that have required
         public Product(string name, decimal price)
         {
             if (price <= 0)

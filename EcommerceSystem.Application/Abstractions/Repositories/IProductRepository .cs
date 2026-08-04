@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EcommerceSystem.Domain.Entities;
 
 namespace EcommerceSystem.Application.Orders.PlaceOrder
 {
-    internal class IOrderRepositity
+    public interface IProductRepository
     {
+        public Task<IEnumerable<Product>> GetProducstByIdAsync(IEnumerable<Guid> ids);
     }
 }

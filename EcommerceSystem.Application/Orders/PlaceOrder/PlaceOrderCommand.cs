@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EcommerceSystem.Application.Orders.PlaceOrder
+﻿namespace EcommerceSystem.Application.Orders.PlaceOrder
 {
-    internal class PlaceOrderCommande
+    public record PlaceOrderCommand(Guid CustomerId, List<PlaceOrderItem> OrderItems)
     {
     }
 }

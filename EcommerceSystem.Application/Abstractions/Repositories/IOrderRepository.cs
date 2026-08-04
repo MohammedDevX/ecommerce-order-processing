@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EcommerceSystem.Domain.Entities;
 
-namespace EcommerceSystem.Application.Orders.PlaceOrder
+namespace EcommerceSystem.Application.Abstractions.Repositories
 {
-    internal class IOrderRepositity
+    public interface IOrderRepository
     {
+        public Task SaveAsync(Order request);
     }
 }

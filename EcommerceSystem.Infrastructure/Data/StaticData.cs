@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EcommerceSystem.Domain.Entities;
 
 namespace EcommerceSystem.Infrastructure.Data
 {
-    internal class StaticData
+    public class StaticData
     {
+        public List<Product> Products { get; } = [];
+        public List<Customer> Customers { get; } = [];
+        public List<Order> Orders { get; } = [];
     }
 }
