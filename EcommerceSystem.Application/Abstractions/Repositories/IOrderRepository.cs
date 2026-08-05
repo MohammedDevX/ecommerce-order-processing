@@ -4,6 +4,6 @@ namespace EcommerceSystem.Application.Abstractions.Repositories
 {
     public interface IOrderRepository
     {
-        public Task SaveAsync(Order request);
+        public Task SaveAsync(Order order);
     }
 }
