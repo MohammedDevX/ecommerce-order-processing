@@ -5,5 +5,7 @@ namespace EcommerceSystem.Application.Orders.PlaceOrder
     public interface IProductRepository
     {
         public Task<IEnumerable<Product>> GetProducstByIdAsync(IEnumerable<Guid> ids);
+
+        public Task<IEnumerable<Product>> GetProductsAsync();
     }
 }

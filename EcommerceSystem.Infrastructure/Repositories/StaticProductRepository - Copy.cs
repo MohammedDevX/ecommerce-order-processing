@@ -1,6 +1,7 @@
 ﻿using EcommerceSystem.Application.Orders.PlaceOrder;
 using EcommerceSystem.Domain.Entities;
 using EcommerceSystem.Infrastructure.Data;
+using System.Data;
 
 namespace EcommerceSystem.Infrastructure.Repositories
 {
@@ -13,6 +14,12 @@ namespace EcommerceSystem.Infrastructure.Repositories
             var products = data.Products.Where(p => idsHashSet.Contains(p.Id));
 
             return Task.FromResult(products);
+        }
+
+        public Task<IEnumerable<Product>> GetProductsAsync()
+        {
+            var products = data.Products.ToList();
+            return Task.FromResult(products.AsEnumerable());
         }
     }
 }

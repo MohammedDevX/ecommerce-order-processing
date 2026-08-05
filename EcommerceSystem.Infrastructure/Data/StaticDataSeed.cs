@@ -23,7 +23,7 @@ namespace EcommerceSystem.Infrastructure.Data
             var airFilter = new Product("Air Filter", 95m);
             var brakePads = new Product("Brake Pads", 650m);
 
-            castrol.Desactivate();
+            //castrol.Desactivate();
 
             data.Products.AddRange(castrol, total, shell, oilFilter, airFilter, brakePads);
 
